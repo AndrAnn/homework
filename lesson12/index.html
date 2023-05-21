@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
+
 <body>
-    
-
-
-
-
-
-    <input type="submit" value="Отправить">
-    <input type="reset" value="Сбросить">
+    <main>
+        <form>
+            <fieldset>
+                <legend>Данные клиента</legend>
+                <ul>
+                    <li><label>Имя <input type="text" name="name"></label></li>
+                    <li><label>Фамилия <input type="text" name="family"></label></li>
+                    <li><label>Телефон <input type="tel" name="tel"></label></li>
+                    <li><label>Почта <input type="email" name="email"></label></li>
+                    <li><label>Дата доставки <input type="datetime-local" name="datetime"></label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Выберете количество огурцов для доставки</legend>
+                <ul>
+                    <li><label><input type="radio" name="cucumber" value="1">1 огурец</label></li>
+                    <li><label><input type="radio" name="cucumber" value="2">2 огурца</label></li>
+                    <li><label><input type="radio" name="cucumber" value="3">3 огурца</label></li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+    </main>
 </body>
 </html>
