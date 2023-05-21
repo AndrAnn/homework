@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Ваши данные</legend>
+                <ul>
+                    <li><label for="#form-name">Имя: </label><input type="text" name="customername" id="form-name"></li>
+                    <li>
+                        <label for="#form-city">Город: </label>
+                        <select name="customercity" id="form-city">
+                            <option value="Moscow">Москва</option>
+                            <option value="SaintPetersburg">Питер</option>
+                            <option value="Rostov">Ростов</option>
+                            <option value="Kazan">Казань</option>
+                            <option value="Krasnodar">Краснодар</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Данные вашего питомца</legend>
+                <ul>
+                    <li><label for="#form-pet-name">Кличка: </label><input type="text" name="petname" id="form-pet-name"></li>
+                </ul>
+            </fieldset>
+            <br>
+            <button type="submit">Отправить</button>
+            <button type="reset">Сбросить</button>
+        </form>
+    </main>
+</body>
+
+</html>
