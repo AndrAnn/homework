@@ -1,0 +1,15 @@
+/* p{
+    color: black !important;
+}     */
+p{
+    color: red;
+}
+#hello{
+    color: pink;
+}
+.hello{
+    color:greenyellow;
+}
+[class]{
+    color: blue;
+}
