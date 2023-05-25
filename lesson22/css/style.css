@@ -1,0 +1,8 @@
+p{
+    box-sizing: border-box;
+    padding: 25px 25px 0px;
+    width: 50vw;
+    /*height: 50vh;*/
+    height: 100px;
+    overflow: auto;
+}
