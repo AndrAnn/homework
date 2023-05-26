@@ -1,0 +1,13 @@
+.block{
+    margin: 10px;
+    border: 2px solid black;
+
+    display: grid;
+    grid-template:repeat(2,auto) / auto auto minmax(100px,200px) auto auto;
+}
+.block__item{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
