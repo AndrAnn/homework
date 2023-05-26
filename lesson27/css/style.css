@@ -1,0 +1,12 @@
+h1{
+    font-size: 6em;
+    animation: loop-color 2s infinite alternate;
+}
+@keyframes loop-color{
+    from{
+        color: black;
+    }
+    to{
+        color: red;
+    }
+}
