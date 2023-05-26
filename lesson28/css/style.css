@@ -1,0 +1,14 @@
+.block{
+    margin: 100px;
+    height: 200px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block__item{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
