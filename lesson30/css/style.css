@@ -1,0 +1,6 @@
+.menu__item{
+    font-size: 3em;
+}
+.menu__item:first-child:hover{
+    color: red;
+}
