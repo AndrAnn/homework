@@ -172,7 +172,6 @@ h1 {
 }
 
 .header__rating {
-    width: 350px;
     padding: 16px 32px;
     top: 460px;
     left: 300px;
@@ -208,7 +207,7 @@ h1 {
 }
 
 .header__rating-text {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header__rating-title {
@@ -265,6 +264,7 @@ h2 {
     background-color: white;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 
 .main__offer-table-item svg {
@@ -274,4 +274,22 @@ h2 {
 .main__offer-table-item:hover {
     background-color: #FF6433;
     color: white;
+}
+
+.main__offer-more {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    line-height: 175%;
+    margin-top: 32px;
+    transition: 0.3s;
+}
+
+.main__offer-more svg {
+    margin-left: 16px;
+}
+
+.main__offer-more:hover {
+    color: #FF6433;
 }
