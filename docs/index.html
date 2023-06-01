@@ -90,11 +90,11 @@
             </div>
         </header>
         <main class="main">
-            <section class="offer">
-                <div class="offer-subtitle container">What we Offer</div>
-                <h2 class="offer-title container">We offer full service auto repair & maintenance</h2>
-                <div class="offer-table container">
-                    <div class="offer-table-item">
+            <section class="main__offer offer">
+                <div class="offer__subtitle container">What we Offer</div>
+                <h2 class="offer__title container">We offer full service auto repair & maintenance</h2>
+                <div class="offer__table container">
+                    <div class="offer__table-item">
                         <svg width="45" height="45" viewBox="0 0 45 45" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -102,7 +102,7 @@
                         </svg>
                         <p>Diagnostics</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="42" height="42" viewBox="0 0 42 42" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -125,7 +125,7 @@
                         </svg>
                         <p>Engine Repair</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -135,7 +135,7 @@
                         </svg>
                         <p>Wheel Repair</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="34" height="46" viewBox="0 0 34 46" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -146,7 +146,7 @@
                                 d="M15.6523 0H7.56641C6.82214 0 6.21875 0.603391 6.21875 1.34766V2.69531H17V1.34766C17 0.603391 16.3966 0 15.6523 0Z""/>
                             </svg>
                             <p>Oil Filter</p></div>
-                        <div class=" offer-table-item">
+                        <div class=" offer__table-item">
                                 <svg width="55" height="39" viewBox="0 0 55 39" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -154,7 +154,7 @@
                                 </svg>
                                 <p>Body Work</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="44" height="40" viewBox="0 0 44 40" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -166,7 +166,7 @@
                         </svg>
                         <p>Batteries</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="38" height="46" viewBox="0 0 38 46" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -174,7 +174,7 @@
                         </svg>
                         <p>Insurance Claim</p>
                     </div>
-                    <div class="offer-table-item">
+                    <div class="offer__table-item">
                         <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -183,7 +183,7 @@
                         <p>Custom Service</p>
                     </div>
                 </div>
-                <a class="offer-more container" href="#">Learn about services
+                <a class="offer__more container" href="#">Learn about services
                     <svg width="53" height="16" viewBox="0 0 53 16" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -193,9 +193,22 @@
 
 
             </section>
-            <div class="process">
+            <!-- в процессе
+            <div class="process container">
+                <div class="process__content">
+                    <h2 class="process__title">We follow a clear process to help you out.</h2>
+                    <div class="process__text">Through True Rich Attended does no end it his mother since real had half
+                        every him case in packages enquire</div>
+                    <div class="process__button">Learn more</div>
+                </div>
+                <ul class="process__steps">
+                    <li class="process__steps-item"></li>
+                    <li class="process__steps-item"></li>
+                    <li class="process__steps-item"></li>
+                </ul>
 
-            </div>
+
+            </div> -->
             <div class="cta">
 
             </div>
@@ -205,113 +218,113 @@
             <div class="brands">
 
             </div>
-            <section class="blog container">
-                <h2 class="blog-title">Our blog</h2>
-                <div class="blog-body">
-                    <ul class="blog-filters">
-                        <li class="blog-filters-item">
-                            <button class="blog-filters-btn blog-filters-btn--active" type="button"
+            <section class="main__blog blog container">
+                <h2 class="blog__title">Our blog</h2>
+                <div class="blog__body">
+                    <ul class="blog__filters">
+                        <li class="blog__filters-item">
+                            <button class="blog__filters-btn blog__filters-btn--active" type="button"
                                 data-filter="all">All</button>
                         </li>
-                        <li class="blog-filters-item">
-                            <button class="blog-filters-btn" type="button"
-                                data-filter=".blog-filters-item--latest">Latest</button>
+                        <li class="blog__filters-item">
+                            <button class="blog__filters-btn" type="button"
+                                data-filter=".blog__filters-item--latest">Latest</button>
                         </li>
-                        <li class="blog-filters-item">
-                            <button class="blog-filters-btn" type="button"
-                                data-filter=".blog-filters-item--popular">Popular</button>
+                        <li class="blog__filters-item">
+                            <button class="blog__filters-btn" type="button"
+                                data-filter=".blog__filters-item--popular">Popular</button>
                         </li>
-                        <li class="blog-filters-item">
-                            <button class="blog-filters-btn" type="button"
-                                data-filter=".blog-filters-item--favorites">Favorites</button>
+                        <li class="blog__filters-item">
+                            <button class="blog__filters-btn" type="button"
+                                data-filter=".blog__filters-item--favorites">Favorites</button>
                         </li>
                     </ul>
-                    <ul class="blog-content">
-                        <li class="mix blog-article blog-filters-item--latest" data-order="1">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                    <ul class="blog__content">
+                        <li class="mix blog__article blog__filters-item--latest" data-order="1">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog1.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2023</div>
-                                    <h3 class="blog-article-title">5 Genius Car Accessories You Should Never Drive
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2023</div>
+                                    <h3 class="blog__article-title">5 Genius Car Accessories You Should Never Drive
                                         Without</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="mix blog-article blog-filters-item--latest" data-order="2">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                        <li class="mix blog__article blog__filters-item--latest" data-order="2">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog2.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2023</div>
-                                    <h3 class="blog-article-title">5 Genius Car Accessories You Should Never Drive
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2023</div>
+                                    <h3 class="blog__article-title">5 Genius Car Accessories You Should Never Drive
                                         Without</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="mix blog-article blog-filters-item--popular" data-order="3">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                        <li class="mix blog__article blog__filters-item--popular" data-order="3">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog3.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2021</div>
-                                    <h3 class="blog-article-title">We provide blow straight past it with the wheels
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2021</div>
+                                    <h3 class="blog__article-title">We provide blow straight past it with the wheels
                                         skidding</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="mix blog-article blog-filters-item--popular" data-order="4">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                        <li class="mix blog__article blog__filters-item--popular" data-order="4">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog4.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2021</div>
-                                    <h3 class="blog-article-title">We provide blow straight past it with the wheels
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2021</div>
+                                    <h3 class="blog__article-title">We provide blow straight past it with the wheels
                                         skidding</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="mix blog-article blog-filters-item--favorites" data-order="5">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                        <li class="mix blog__article blog__filters-item--favorites" data-order="5">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog5.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2021</div>
-                                    <h3 class="blog-article-title">5 Genius Car Accessories You Should Never Drive
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2021</div>
+                                    <h3 class="blog__article-title">5 Genius Car Accessories You Should Never Drive
                                         Without</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="mix blog-article blog-filters-item--favorites" data-order="6">
-                            <a class="blog-article-link" href="#">
-                                <div class="blog-article-image">
+                        <li class="mix blog__article blog__filters-item--favorites" data-order="6">
+                            <a href="#">
+                                <div class="blog__article-image">
                                     <img src="image/blog6.jpg" alt="">
                                 </div>
-                                <div class="blog-article-content">
-                                    <div class="blog-article-datetime">Posted on October 6th 2021</div>
-                                    <h3 class="blog-article-title">5 Genius Car Accessories You Should Never Drive
+                                <div class="blog__article-content">
+                                    <div class="blog__article-datetime">Posted on October 6th 2021</div>
+                                    <h3 class="blog__article-title">5 Genius Car Accessories You Should Never Drive
                                         Without</h3>
-                                    <p class="blog-article--text">We provide a full range of front end mechanical
+                                    <p class="blog__article--text">We provide a full range of front end mechanical
                                         repairs for all makes and models We provide a full range of front end mechanical
                                         repairs for all makes and models</p>
                                 </div>

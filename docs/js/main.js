@@ -1,10 +1,10 @@
 $(function () {
 
-    var mixer = mixitup('.blog-body');
+    var mixer = mixitup('.blog__body');
 
-    $('.blog-filters-btn').on('click', function () {
-        $('.blog-filters-btn').removeClass('blog-filters-btn--active')
-        $(this).addClass('blog-filters-btn--active')
+    $('.blog__filters-btn').on('click', function () {
+        $('.blog__filters-btn').removeClass('blog__filters-btn--active')
+        $(this).addClass('blog__filters-btn--active')
     })
 
     $(".rateYo").rateYo({
