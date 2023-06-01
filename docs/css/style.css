@@ -225,12 +225,12 @@ h1 {
     opacity: 0.7;
 }
 
-.main__offer {
+.offer {
     background-color: #F2F2F2;
     padding: 128px 0;
 }
 
-.main__offer-subtitle {
+.offer-subtitle {
     line-height: 36px;
     text-align: center;
     letter-spacing: -0.03em;
@@ -244,7 +244,7 @@ h2 {
     letter-spacing: -0.03em;
 }
 
-.main__offer-title {
+.offer-title {
     max-width: 858px;
     text-align: center;
     margin-left: auto;
@@ -252,13 +252,13 @@ h2 {
     margin-bottom: 64px;
 }
 
-.main__offer-table {
+.offer-table {
     display: grid;
     grid-template: repeat(2, 232px) / repeat(4, auto);
     gap: 8px;
 }
 
-.main__offer-table-item {
+.offer-table-item {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -267,16 +267,16 @@ h2 {
     transition: 0.3s;
 }
 
-.main__offer-table-item svg {
+.offer-table-item svg {
     margin-bottom: 16px;
 }
 
-.main__offer-table-item:hover {
+.offer-table-item:hover {
     background-color: #FF6433;
     color: white;
 }
 
-.main__offer-more {
+.offer-more {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -286,10 +286,92 @@ h2 {
     transition: 0.3s;
 }
 
-.main__offer-more svg {
+.offer-more svg {
     margin-left: 16px;
 }
 
-.main__offer-more:hover {
+.offer-more:hover {
     color: #FF6433;
+}
+
+.blog {
+    padding: 131px 0px 138px 0px;
+}
+
+.blog-title {
+    margin-bottom: 47px;
+}
+
+.blog-body {
+    min-height: 823px;
+}
+
+.blog-filters {
+    display: flex;
+    margin-bottom: 46px;
+}
+
+.blog-filters-item {
+    margin-right: 30px;
+}
+
+.blog-filters-btn {
+    border-bottom: 3px solid white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    background-color: transparent;
+    transition: .25s;
+}
+
+.blog-filters-btn--active,  
+.blog-filters-btn:hover {
+    border-color: #FF6433;
+}
+
+.blog-content {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, max(405px));
+    justify-content:space-between;
+    grid-row-gap: 64px;
+}
+
+.blog-article {
+    max-width: 405px;
+}
+
+.blog-article-link {
+    
+}
+
+.blog-article-image {
+    margin-bottom: 24px;
+}
+
+.blog-article-content {}
+
+.blog-article-datetime {
+    line-height: 28px;
+    color: #939191;
+    margin-bottom: 16px;
+}
+
+.blog-article-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+}
+
+.blog-article--text {
+    line-height: 28px;
+
+    color: #232536;
+}
+
+.comments{
+    background-color: #F2F2F2;
+    padding: 128px 0;
 }

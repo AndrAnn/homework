@@ -1,5 +1,12 @@
 $(function () {
 
+    var mixer = mixitup('.blog-body');
+
+    $('.blog-filters-btn').on('click', function () {
+        $('.blog-filters-btn').removeClass('blog-filters-btn--active')
+        $(this).addClass('blog-filters-btn--active')
+    })
+
     $(".rateYo").rateYo({
 
         "rating": 4.5,
