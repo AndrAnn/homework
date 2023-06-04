@@ -442,6 +442,8 @@ h2 {
     justify-content: center;
     position: relative;
     max-height: 502px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .cta__img {
@@ -451,9 +453,10 @@ h2 {
 .cta__body {
     position: absolute;
     height: 100%;
-    padding: 6vw 4%;
-    left: 16%;
+    padding: 128px 80px;
+    right: 45%;
     background-color: #FF6433;
+    max-width: 729px;
     width: 39%;
 }
 
@@ -470,6 +473,10 @@ h2 {
 
 .cta__button--black {
     background-color: #1E1B1B;
+}
+
+.experience{
+    background-color:#F2F2F2;
 }
 
 .experience__list {
