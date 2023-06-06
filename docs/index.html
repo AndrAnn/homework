@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -414,9 +415,96 @@
             <section class="comments">
                 <div class="container">
                     <h2 class="comments__title">Our customers say the nicest things about our service</h2>
-                    <div class="comments__slaider"></div>
-                    
-    
+                    <div class="comments__slaider">
+                        <div class="comment__slaider-inner">
+                            <div class="comments__slaider-item">
+                                <div class="comments__user">
+                                    <div class="comments__user-avatar"><img src="image/user1.jpg" alt=""></div>
+                                    <div class="comments__user-info">
+                                        <div class="comments__user-name">Jonathan Vallem</div>
+                                        <div class="comments__user-location">New york</div>
+                                    </div>
+                                </div>
+                                <div class="comments__text">I have got my car repaired at Finsweet many times before,
+                                    they
+                                    are good at what they do. Not only did they repair my car in a short comprehensive
+                                    look on all the working</div>
+                            </div>
+                        </div>
+                        <div class="comment__slaider-inner">
+                            <div class="comments__slaider-item">
+                                <div class="comments__user">
+                                    <div class="comments__user-avatar"><img src="image/user2.jpg" alt=""></div>
+                                    <div class="comments__user-info">
+                                        <div class="comments__user-name">Smith Johnson</div>
+                                        <div class="comments__user-location">New york</div>
+                                    </div>
+                                </div>
+                                <div class="comments__text">I have got my car repaired at Finsweet many times before,
+                                    they
+                                    are good at what they do. Not only did they repair my car in a short comprehensive
+                                    look
+                                    on all the working</div>
+                            </div>
+                        </div>
+                        <div class="comment__slaider-inner">
+                            <div class="comments__slaider-item">
+                                <div class="comments__user">
+                                    <div class="comments__user-avatar"><img src="image/user3.jpeg" alt=""></div>
+                                    <div class="comments__user-info">
+                                        <div class="comments__user-name">Jonathan Vallem</div>
+                                        <div class="comments__user-location">New york</div>
+                                    </div>
+                                </div>
+                                <div class="comments__text">I have got my car repaired at Finsweet many times before,
+                                    they
+                                    are good at what they do. Not only did they repair my car in a short comprehensive
+                                    look on all the working</div>
+                            </div>
+                        </div>
+                        <div class="comment__slaider-inner">
+                            <div class="comments__slaider-item">
+                                <div class="comments__user">
+                                    <div class="comments__user-avatar"><img src="image/user4.jpg" alt=""></div>
+                                    <div class="comments__user-info">
+                                        <div class="comments__user-name">Smith Johnson</div>
+                                        <div class="comments__user-location">New york</div>
+                                    </div>
+                                </div>
+                                <div class="comments__text">I have got my car repaired at Finsweet many times before,
+                                    they
+                                    are good at what they do. Not only did they repair my car in a short comprehensive
+                                    look
+                                    on all the working</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__buttons">
+                        <div class="comments__buttons-arrow-empty"></div>                        
+                        <div class="comments__dots">                            
+                        </div>
+                        <div class="comments__buttons-arrow">
+                            <div class="comments__previous comments__arrow">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="white" />
+                                    <path
+                                        d="M34.2852 25C34.8374 25 35.2852 24.5523 35.2852 24C35.2852 23.4477 34.8374 23 34.2852 23L34.2852 25ZM13.449 23.2929C13.0585 23.6834 13.0585 24.3166 13.449 24.7071L19.813 31.0711C20.2035 31.4616 20.8367 31.4616 21.2272 31.0711C21.6177 30.6805 21.6177 30.0474 21.2272 29.6569L15.5703 24L21.2272 18.3431C21.6177 17.9526 21.6177 17.3195 21.2272 16.9289C20.8367 16.5384 20.2035 16.5384 19.813 16.9289L13.449 23.2929ZM34.2852 23L14.1561 23L14.1561 25L34.2852 25L34.2852 23Z"
+                                        fill="#1E1B1B" />
+                                </svg>
+                            </div>
+                            <div class="comments__next comments__arrow">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0 48)"
+                                        fill="white" />
+                                    <path
+                                        d="M13.7148 25C13.1626 25 12.7148 24.5523 12.7148 24C12.7148 23.4477 13.1626 23 13.7148 23L13.7148 25ZM34.551 23.2929C34.9415 23.6834 34.9415 24.3166 34.551 24.7071L28.187 31.0711C27.7965 31.4616 27.1633 31.4616 26.7728 31.0711C26.3823 30.6805 26.3823 30.0474 26.7728 29.6569L32.4297 24L26.7728 18.3431C26.3823 17.9526 26.3823 17.3195 26.7728 16.9289C27.1633 16.5384 27.7965 16.5384 28.187 16.9289L34.551 23.2929ZM13.7148 23L33.8439 23L33.8439 25L13.7148 25L13.7148 23Z"
+                                        fill="#1E1B1B" />
+                                </svg>
+                            </div>
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="faq">
@@ -436,10 +524,13 @@
                     <div class="footer__contacts-left">
                         <div class="footer__title">Get in touch with us for your service</div>
                         <div class="footer__social">
-                            <a class="footer__social-item" href="#"><img src="image/facebook.svg" alt="facebook link"></a>
+                            <a class="footer__social-item" href="#"><img src="image/facebook.svg"
+                                    alt="facebook link"></a>
                             <a class="footer__social-item" href="#"><img src="image/twitter.svg" alt="twitter link"></a>
-                            <a class="footer__social-item" href="#"><img src="image/instagram.svg" alt="instagram link"></a>
-                            <a class="footer__social-item" href="#"><img src="image/linkedin.svg" alt="linkedin link"></a>
+                            <a class="footer__social-item" href="#"><img src="image/instagram.svg"
+                                    alt="instagram link"></a>
+                            <a class="footer__social-item" href="#"><img src="image/linkedin.svg"
+                                    alt="linkedin link"></a>
                         </div>
                     </div>
                     <div class="footer__contacts-right">
@@ -490,6 +581,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/main.js"></script>
 
