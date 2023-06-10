@@ -32,4 +32,23 @@ $(function () {
         $('.comments__slaider').slick('slickNext')
     })
 
+    /*$('.faq__item-link').on('click', function (e) {
+        e.preventDefault()
+       $(this).toggleClass('faq__item-link--active')
+       $(this).children('.faq__answer').slideToggle()
+
+    })*/
+
+    $('.faq__item-link').on('click', function (e) {
+        e.preventDefault()
+        if ($(this).hasClass('faq__item-link--active')) {
+            $(this).removeClass('faq__item-link--active')
+            $(this).children('.faq__answer').slideUp()
+        } else {
+            $('.faq__item-link').removeClass('faq__item-link--active')
+            $('.faq__answer').slideUp()
+            $(this).addClass('faq__item-link--active')
+            $(this).children('.faq__answer').slideDown()
+        }
+    })
 });
