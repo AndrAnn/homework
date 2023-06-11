@@ -1,3 +1,4 @@
+ymaps.ready(init);
 $(function () {
 
     var mixer = mixitup('.blog__body');
@@ -51,4 +52,25 @@ $(function () {
             $(this).children('.faq__answer').slideDown()
         }
     })
+
+    
+
+    
+
 });
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+
+        center: [37.769460, -122.468314],
+        zoom: 12,
+        controls: []
+    });
+
+    // Добавление метки
+    // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark-docpage/
+    var myPlacemark = new ymaps.Placemark([37.769460, -122.468314]);
+
+    myMap.geoObjects.add(myPlacemark);
+
+}
