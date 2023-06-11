@@ -39,6 +39,13 @@ h2 {
     font-weight: 600;
     font-size: 18px;
     line-height: 175%;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.button:hover{
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+
 }
 
 .header {
@@ -524,6 +531,10 @@ h2 {
     padding: 45px 30px;
 }
 
+.brands__item {
+    filter: grayscale(1);
+}
+
 /*-----------------------------------*/
 
 .footer__image {
@@ -779,8 +790,8 @@ h2 {
     transition: all .3s;
 }
 
-.contacts__form{
-    height: 937px;
+.main__contacts {
+    padding-top: 121px;
 }
 
 #map {
@@ -788,6 +799,78 @@ h2 {
     width: 100%;
     height: 512px;
     margin-bottom: -168px;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+}
+
+.contacts__info-title {
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.contacts__info-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    display: block;
+}
+
+.contacts__info {
+    max-width: 480px;
+}
+
+.contacts__info-item {
+    margin-bottom: 32px;
+}
+
+.contacts__body {
+    margin-bottom: 178px;
+}
+
+.contacts__title {
+    max-width: 507px;
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 48px;
+}
+
+.contacts__inner {
+    display: flex;
+}
+
+.contacts__form {}
+
+.contacts__form-list {
+    margin-right: 100px;
+}
+
+.contacts__form-input,
+.contacts__form-text {
+    background-color: #F2F2F2;
+    color: #1E1B1B;
+    width: 624px;
+    min-height: 72px;
+    padding: 23px 0 23px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.contacts__form-input::placeholder,
+.contacts__form-text::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1E1B1B;
+}
+
+.contacts__form-input,
+.contacts__form-select {
+    margin-bottom: 4px;
+}
+
+.contacts__form-text {
+    margin-bottom: 48px;
+    resize: vertical;
+    overflow: hidden;
 }
