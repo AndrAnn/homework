@@ -53,24 +53,33 @@ $(function () {
         }
     })
 
-    
+    setInterval(() => {
+        if ($(window).scrollTop() > 0 && $('.header__nav').hasClass('header__nav--open') === false) {
+            $('.burger').addClass('burger--follow')
+        } else {
+            $('.burger').removeClass('burger--follow')
+        }
+        if ($(window).width() > 900) {
+            $('.overlay').removeClass('overlay--show')
+            $('.burger').removeClass('burger--close')
+            $('.header__nav').removeClass('header__nav--open')
+        }
+    }, 0)
 
-    
-
+    $('.burger, .overlay, .header__nav a').on('click', function (e) {
+        e.preventDefault()
+        $('.header__nav').toggleClass('header__nav--open')
+        $('.overlay').toggleClass('overlay--show')
+        $('.burger').toggleClass('burger--close')
+    })
 });
 
 function init() {
     var myMap = new ymaps.Map("map", {
-
         center: [37.769460, -122.468314],
         zoom: 12,
         controls: []
     });
-
-    // Добавление метки
-    // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark-docpage/
     var myPlacemark = new ymaps.Placemark([37.769460, -122.468314]);
-
     myMap.geoObjects.add(myPlacemark);
-
 }
