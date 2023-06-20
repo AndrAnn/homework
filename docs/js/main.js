@@ -61,24 +61,47 @@ $(function () {
         }
     })
 
-    setInterval(() => {
+    $(window).on('scroll', function (e) {
         if ($(window).scrollTop() > 0 && $('.header__nav').hasClass('header__nav--open') === false) {
             $('.burger').addClass('burger--follow')
         } else {
             $('.burger').removeClass('burger--follow')
         }
+    })
+
+    $(window).on('resize', function (e) {
         if ($(window).width() > 900) {
+            e.preventDefault()
             $('.overlay').removeClass('overlay--show')
             $('.burger').removeClass('burger--close')
             $('.header__nav').removeClass('header__nav--open')
         }
-    }, 0)
+    })
 
-    $('.burger, .overlay, .header__nav a').on('click', function (e) {
+    $(".header__nav a, .header__body a, .main a, .footer a").on("click", function (e) {
+        if ($('.header__nav').hasClass('header__nav--open') === true) {
+            $('.header__nav').removeClass('header__nav--open')
+            $('.overlay').removeClass('overlay--show')
+            $('.burger').removeClass('burger--close')
+        }
         e.preventDefault()
-        $('.header__nav').toggleClass('header__nav--open')
+        var id = $(this).attr('href'),
+            top = $(id).offset().top
+        $('body,html').animate({ scrollTop: top }, 900)
+        e.preventDefault()
+    })
+
+    $('.burger, .overlay').on('click', function (e) {
+        e.preventDefault()
         $('.overlay').toggleClass('overlay--show')
         $('.burger').toggleClass('burger--close')
+        if ($('.burger').hasClass('burger--follow') === true) {
+            $('.burger').removeClass('burger--follow')
+        }
+        else if ($('.burger').hasClass('burger--follow') === false && $(window).scrollTop() > 0) {
+            $('.burger').addClass('burger--follow')
+        }
+        $('.header__nav').toggleClass('header__nav--open')
     })
 });
 
@@ -91,10 +114,3 @@ function init() {
     var myPlacemark = new ymaps.Placemark([37.769460, -122.468314]);
     myMap.geoObjects.add(myPlacemark);
 }
-
-$("body a").on("click", function(e) {
-    e.preventDefault()
-    var id  = $(this).attr('href'),
-    top = $(id).offset().top
-    $('body,html').animate({ scrollTop: top }, 900)
-  })
