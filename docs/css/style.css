@@ -582,7 +582,8 @@ h3 {
 /*-----------------------------------*/
 
 .footer__image {
-    max-height: 448px;
+    background: url(../image/footer-image.jpg) 50% 50% / cover no-repeat;
+    height: 448px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -592,6 +593,7 @@ h3 {
     justify-content: space-between;
     padding-top: 128px;
     padding-bottom: 128px;
+    gap:30px;
 }
 
 .footer__top {
@@ -678,6 +680,9 @@ h3 {
 
 .comments__slaider-item {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 72px;
 }
 
@@ -696,19 +701,19 @@ h3 {
 
 .comments__user-name {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
     letter-spacing: -0.03em;
 }
 
 .comments__user-location {
-    line-height: 28px;
+    line-height: 175%;
     color: #939191;
 }
 
 .comments__text {
     max-width: 472px;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
     letter-spacing: -0.03em;
 }
 
@@ -798,7 +803,7 @@ h3 {
 
 .faq__question {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
     letter-spacing: -0.03em;
 }
 
@@ -814,6 +819,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .faq__block {
@@ -857,19 +863,20 @@ h3 {
 }
 
 .contacts__info-title {
-    line-height: 28px;
+    line-height: 175%;
     opacity: 0.7;
 }
 
 .contacts__info-subtitle {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
     letter-spacing: -0.03em;
     display: block;
 }
 
 .contacts__info {
     max-width: 480px;
+    padding-right: 32px;
 }
 
 .contacts__info-item {
@@ -883,16 +890,17 @@ h3 {
 .contacts__title {
     max-width: 507px;
     font-size: 64px;
-    line-height: 84px;
+    line-height: 131%;
     margin-bottom: 48px;
 }
 
 .contacts__inner {
     display: flex;
+    gap: 100px;
 }
 
 .contacts__form-list {
-    margin-right: 100px;
+    /*margin-right: 100px;*/
 }
 
 .contacts__form-input,
@@ -902,7 +910,7 @@ h3 {
     width: 624px;
     height: 72px;
     padding: 23px 0 21px 40px;
-    line-height: 28px;
+    line-height: 175%;
     border-radius: 2px;
 }
 
@@ -910,7 +918,7 @@ h3 {
 .contacts__form-text::placeholder {
     font-weight: 600;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 175%;
     color: #1E1B1B;
 }
 
@@ -969,7 +977,7 @@ h3 {
         font-size: 50px;
     }
 
-    h2 {
+    h2, .contacts__title, .footer__title {
         font-size: 48px;
     }
 
@@ -1040,6 +1048,34 @@ h3 {
     .experience__list-subtitle {
         font-size: 20px;
     }
+
+    .comments__slaider-item {
+        padding: 40px 30px;
+    }
+
+    .contacts__form-input,
+    .contacts__form-text {
+        padding: 20px 0 20px 40px;
+        line-height: 175%;
+        border-radius: 2px;
+    }
+
+    .contacts__inner {
+        gap: 50px;
+    }
+
+    .contacts__form-input::placeholder,
+    .contacts__form-text::placeholder {
+        font-size: 16px;
+    }
+
+    .contacts__info-title, .footer__item-title {
+        line-height: 24px;
+    }
+
+    .contacts__info-subtitle, .footer__item-subtitle  {
+        font-size: 20px;
+    }
 }
 
 @media (max-width:1100px) {
@@ -1055,6 +1091,33 @@ h3 {
         visibility: hidden;
     }
 
+    .comment__slaider-inner {
+        padding: 0 12px;
+    }
+
+    .comments__slaider .slick-list {
+        margin: 0 -12px;
+    }
+
+    .comments__text {
+        font-size: 20px;
+    }
+
+    .comments__user-name {
+        font-size: 20px;
+    }
+
+    .contacts__title {
+        max-width: none;
+    }
+
+    .contacts__form-input, .contacts__form-text {
+        width: 500px;
+    }
+
+    .footer__nav{
+        gap: 20px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1193,7 +1256,6 @@ h3 {
 
     .offer__table {
         grid-template: repeat(2, 200px) / repeat(4, 1fr);
-
     }
 
     .process {
@@ -1275,6 +1337,80 @@ h3 {
     .blog__content {
         grid-template: repeat(3, auto) / repeat(2, auto);
     }
+
+    .slick-dots li {
+        width: 28px;
+        height: 3px;
+    }
+
+    .comments__text {
+        max-width: none;
+    }
+
+    .comments__slaider-item {
+        padding: 50px 25px;
+    }
+
+    .comments {
+        background-color: #F2F2F2;
+        padding: 100px 0;
+    }
+
+    .contacts__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__info {
+        display: flex;
+        max-width: none;
+        justify-content: space-between;
+        gap: 50px;
+        padding-right: 0;
+    }
+
+    .contacts__form-input, .contacts__form-text {
+        width: 100%;
+    }
+
+    .contacts__info-item {
+        margin-bottom: 0;
+    }
+
+    .contacts__form-button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contacts__body {
+        margin-bottom: 150px;
+    }
+
+    .footer__contacts {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    .footer__contacts-right {
+        margin-right: 0;
+    }
+
+    .footer__menu-item {
+        margin-left: 0;
+    }
+    .footer__menu {
+        color: white;
+        gap: 20px;
+    }
+
+    .footer__menu-item:last-child {
+        margin: 0 0;
+    }
+
+    .process__button{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width:750px) {
@@ -1290,6 +1426,10 @@ h3 {
     .blog__article-title {
         font-size: 28px;
     }
+
+    .contacts__info {
+        gap: 30px;
+    }
 }
 
 @media (max-width:630px) {
@@ -1299,6 +1439,54 @@ h3 {
         justify-content: center;
         align-items: center;
     }
+
+    .comments__buttons-arrow, .comments__buttons-arrow-empty {
+        visibility: hidden;
+        display: none;
+    }
+
+    .comments__buttons {
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .faq__block {
+        width: 37px;
+        height: 34px;
+    }
+
+    .faq__block::before, .faq__block::after {
+        top: 50%;
+        left: 27%;
+    }
+
+    .faq__item-link {
+        padding: 30px 20px;
+    }
+
+    .faq__head-question span {
+        font-size: 20px;
+    }
+
+    .faq__answer {
+        font-size: 16px;
+    }
+
+    .contacts__info {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer__contacts {
+        gap: 64px;
+        flex-direction: column;
+        padding-bottom: 48px;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 @media (max-width:500px) {
@@ -1307,7 +1495,7 @@ h3 {
         font-size: 40px;
     }
 
-    h2 {
+    h2, .contacts__title, .footer__title {
         font-size: 38px;
     }
 
@@ -1373,6 +1561,46 @@ h3 {
     .blog__article--text, .blog__article-datetime {
         font-size: 15px;
     }
+
+    .comments__text, .comments__user-name {
+        font-size: 16px;
+    }
+
+    .comments__user-location {
+        font-size: 14px;
+    }
+
+    .contacts__form-input::placeholder,
+    .contacts__form-text::placeholder {
+        font-size: 14px;
+    }
+
+    .contacts__info-title, .footer__item-title {
+        line-height: 20px;
+    }
+
+    .contacts__info-subtitle, .footer__item-subtitle  {
+        font-size: 18px;
+    }
+
+    .contacts__form-text {
+        margin-bottom: 30px;
+    }
+
+    .contacts__body {
+        margin-bottom: 80px;
+    }
+
+    #map {
+        height: 400px;
+        padding: 0 5px;
+        margin-bottom: -48px;
+        box-shadow: 5px 5px 13px darkgrey;
+    }
+
+    .footer__image{
+        display: none;
+    }
 }
 
 @media (max-width:450px) {
@@ -1405,8 +1633,22 @@ h3 {
         gap: min(10px);
         justify-content: space-between;
     }
+
     .blog__filters-btn {
         font-size: 24px;
+    }
+
+    .faq__head-question span {
+        font-size: 18px;
+        max-width: 150px;
+    }
+
+    .faq__answer {
+        font-size: 14px;
+    }
+
+    .contacts__form-input, .contacts__form-text {
+        padding: 20px 0 20px 20px;
     }
 }
 
@@ -1424,7 +1666,7 @@ h3 {
         font-size: 30px;
     }
 
-    h2 {
+    h2, .contacts__title, .footer__title {
         font-size: 28px;
     }
 
@@ -1482,4 +1724,45 @@ h3 {
         margin-bottom: 30px;
     }
 
+    .comments__slaider-item {
+        padding: 30px 25px;
+    }
+
+    .comments__title {
+        margin-bottom: 60px;
+    }
+
+    .slick-dots li {
+        width: 20px;
+        height: 3px;
+    }
+
+    .faq__block {
+        width: 30px;
+        height: 30px;
+    }
+
+    .faq__block::before, .faq__block::after {
+        top: 50%;
+        left: 26%;
+        width: 13px;
+        height: 2px;
+    }
+
+    .contacts__form-input::placeholder,
+    .contacts__form-text::placeholder {
+        font-size: 11px;
+    }
+
+    .contacts__info-title, .footer__item-title {
+        line-height: 18px;
+    }
+
+    .contacts__info-subtitle, .footer__item-subtitle  {
+        font-size: 16px;
+    }
+    .footer__menu{
+        flex-direction: column;
+        gap:0;
+    }
 }

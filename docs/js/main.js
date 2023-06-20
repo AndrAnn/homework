@@ -22,6 +22,14 @@ $(function () {
         dots: true,
         infinite: true,
         appendDots: $('.comments__dots'),
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.comments__previous').on('click', function (e) {
@@ -83,3 +91,10 @@ function init() {
     var myPlacemark = new ymaps.Placemark([37.769460, -122.468314]);
     myMap.geoObjects.add(myPlacemark);
 }
+
+$("body a").on("click", function(e) {
+    e.preventDefault()
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 900)
+  })

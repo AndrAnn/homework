@@ -15,31 +15,32 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="Home" class="wrapper">
         <div class="overlay"></div>
         <header class="header">
-            <a href="#" class="burger">
+            <a href="" class="burger">
                 <span></span>
             </a>
             <nav class="header__nav container">
-                <a class="header__logo logo" href="#">
+                <a class="header__logo logo" href="/">
                     <img src="image/logo.svg" alt="logo">
                 </a>
                 <ul class="header__menu menu">
                     <li class="header__menu-item menu__item">
-                        <a class="header__menu-link menu__link" href="#">Home</a>
+                        <a class="header__menu-link menu__link" href="#Home">Home</a>
                     </li>
                     <li class="header__menu-item menu__item">
-                        <a class="header__menu-link menu__link" href="#">About us</a>
+                        <a class="header__menu-link menu__link" href="#About">About us</a>
                     </li>
                     <li class="header__menu-item menu__item">
-                        <a class="header__menu-link menu__link" href="#">Services</a>
+                        <a class="header__menu-link menu__link" href="#Services">Services</a>
                     </li>
                     <li class="header__menu-item menu__item">
-                        <a class="header__menu-link menu__link" href="#">Blog</a>
+                        <a class="header__menu-link menu__link" href="#Blog">Blog</a>
+                        
                     </li>
                     <li class="header__menu-item menu__item">
-                        <a class="header__menu-link menu__link" href="#">Contact</a>
+                        <a class="header__menu-link menu__link" href="#Contact">Contact</a>
                     </li>
                 </ul>
                 <div class="header__assistance">
@@ -56,7 +57,7 @@
                 <div class="header__body-content">
                     <h1 class="header__title">Get your vehicle service done online at one place</h1>
                     <div class="header__button-block">
-                        <a class="header__book button" href="#">Book a service</a>
+                        <a class="header__book button" href="#Contact">Book a service</a>
                         <a class="header__play" href="https://www.youtube.com/watch?v=VTDB3mKx7jM" data-fancybox>
                             <img src="image/play_icon.svg" alt="play_ico">
                             Play Video
@@ -95,7 +96,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__offer offer">
+            <section id="About" class="main__offer offer">
                 <div class="offer__subtitle container">What we Offer</div>
                 <h2 class="offer__title container">We offer full service auto repair & maintenance</h2>
                 <div class="offer__table container">
@@ -196,13 +197,13 @@
                     </svg>
                 </a>
             </section>
-            <section class="process main_process  container">
+            <section id="Services" class="process main_process  container">
                 <div class="process__content">
                     <h2 class="process__title">We follow a clear process to help you out.</h2>
                     <div class="process__text">Through True Rich Attended does no end it his mother since real had
                         half
                         every him case in packages enquire</div>
-                    <a class="process__button button" href="#">Learn more</a>
+                    <div class="process__button"><a class="button" href="#Contact">Learn more</a></div>
                 </div>
                 <ul class="process__steps">
                     <li class="process__steps-item">
@@ -242,7 +243,7 @@
                     <div class="cta__body-inner">
                         <div class="cta__body-content">
                             <div class="cta__title">Get in touch with us for your service related query</div>
-                            <a class="cta__button button cta__button--black" href="#">Contact Us</a>
+                            <a class="cta__button button cta__button--black" href="#Contact">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -302,7 +303,7 @@
                     </a>
                 </div>
             </section>
-            <section class="main__blog blog container">
+            <section id="Blog" class="main__blog blog container">
                 <h2 class="blog__title">Our blog</h2>
                 <div class="blog__body">
                     <ul class="blog__filters">
@@ -597,7 +598,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts main__contacts">
+            <section id="Contact" class="contacts main__contacts">
                 <div class="contacts__body container">
                     <h2 class="contacts__title">Get in touch with our experts</h2>
                     <div class="contacts__inner">
@@ -617,7 +618,9 @@
                                             placeholder="Message" required></textarea>
                                     </li>
                                 </ul>
-                                <input class="button" type="submit" value="Send message">
+                                <div class="contacts__form-button">
+                                    <input class=" button" type="submit" value="Send message">
+                                </div>
                             </form>
                         </div>
                         <div class="contacts__info">
@@ -643,7 +646,8 @@
         </main>
         <footer class="footer">
             <div class="footer__top">
-                <div class="footer__image"><img src="image/footer-image.jpg" alt="footer image"></div>
+                <div class="footer__image">
+                </div>
                 <div class="footer__contacts container">
                     <div class="footer__contacts-left">
                         <div class="footer__title">Get in touch with us for your service</div>
@@ -700,24 +704,24 @@
             </div>
             <div class="footer__bottom">
                 <nav class="footer__nav container">
-                    <a class="footer__logo " href="#">
+                    <a class="footer__logo " href="/">
                         <img src="image/logo-white.svg" alt="logo">
                     </a>
                     <ul class="footer__menu menu">
                         <li class="footer__menu-item menu__item">
-                            <a class="footer__menu-link menu__link" href="#">Home</a>
+                            <a class="footer__menu-link menu__link" href="#Home">Home</a>
                         </li>
                         <li class="footer__menu-item menu__item">
-                            <a class="footer__menu-link menu__link" href="#">About us</a>
+                            <a class="footer__menu-link menu__link" href="#About">About us</a>
                         </li>
                         <li class="footer__menu-item menu__item">
-                            <a class="footer__menu-link menu__link" href="#">Services</a>
+                            <a class="footer__menu-link menu__link" href="#Services">Services</a>
                         </li>
                         <li class="footer__menu-item menu__item">
-                            <a class="footer__menu-link menu__link" href="#">Blog</a>
+                            <a class="footer__menu-link menu__link" href="#Blog">Blog</a>
                         </li>
                         <li class="footer__menu-item menu__item">
-                            <a class="footer__menu-link menu__link" href="#">Contact</a>
+                            <a class="footer__menu-link menu__link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                     <div class="footer__copyright">@ Copyright Finsweet 2021</div>
